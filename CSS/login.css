@@ -1,5 +1,51 @@
+html {
+  height: 95%;
+}
+
 body {
-  background-color: aqua;
+  background-color: #FFEB3B;
+  height: 100%;
+}
+
+.generico {
+  border: 1px solid green;
+}
+
+.flx {
+  border: 3px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #212121;
+}
+.flx h1 {
+  text-align: center;
+}
+
+.flx_login {
+  border: 3px solid #BDBDBD;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=login.css.map */

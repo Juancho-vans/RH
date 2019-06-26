@@ -1,3 +1,57 @@
+$primario:#FFEB3B;
+$primario-obscuro:#FBC02D;
+$primario-claro: #FFECB3;
+$primario-texto:#212121;
+$secundario-texto:#757575;
+$texto-claro:#FFF9C4;
+$color-acentuado:#607D8B;
+$borde:#BDBDBD;
+
+html {
+    height: 95%
+}
 body {
-    background-color: aqua;
+    background-color: $primario;
+    height: 100%;
+}
+
+.generico {
+    border: 1px solid green;
+}
+
+.flx {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: $primario-texto;
+        h1 {
+        text-align: center;
+    }
+}
+
+.flx_login {
+    border: 3px solid $borde;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column; 
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
 }
