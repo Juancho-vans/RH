@@ -67,3 +67,30 @@ nav {
         padding: 20px;
     }
 }
+
+@mixin informacion {
+    border: 3px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.datos {
+    @include informacion;
+    width: 400px;
+    justify-content: flex-end;
+    input {
+        margin-bottom: 10px;
+    }
+
+}
+
+.foto  {
+    @include informacion;
+    width: 200px;
+}
+
+.flx_space_between {
+    border: 3px solid pink; 
+    display: flex;
+    justify-content: space-between;
+}
