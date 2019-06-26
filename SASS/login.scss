@@ -37,7 +37,7 @@ body {
 }
 
 .flx_login {
-    border: 3px solid $borde;
+    border: 3px solid $color-acentuado;
     display: flex;
     height: 100px;
     justify-content: center;
@@ -57,4 +57,13 @@ body {
 button {
     padding: 10px;
     width: 100px;
+}
+
+nav {
+    border: 3px solid orange; 
+    width: 100%;
+    a {
+        text-decoration: none;
+        padding: 20px;
+    }
 }

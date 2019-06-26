@@ -29,7 +29,7 @@ body {
 }
 
 .flx_login {
-  border: 3px solid #BDBDBD;
+  border: 3px solid #607D8B;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -49,6 +49,15 @@ body {
 button {
   padding: 10px;
   width: 100px;
+}
+
+nav {
+  border: 3px solid orange;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=login.css.map */
