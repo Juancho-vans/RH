@@ -7,10 +7,31 @@ body {
   height: 100%;
 }
 
-.generico {
+.generico_derecha {
   border: 1px solid green;
+  display: flex;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.generico_izquierda {
+  border: 1px solid green;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.generico_centrado {
+  border: 1px solid green;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  justify-content: center;
 }
 
 .flx {
@@ -39,13 +60,6 @@ body {
   padding: 10px;
 }
 
-.centrado {
-  border: 1px solid black;
-  width: 100%;
-  text-align: center;
-  padding-top: 5px;
-}
-
 button {
   padding: 10px;
   width: 100px;
@@ -60,15 +74,28 @@ nav a {
   padding: 20px;
 }
 
+.flx_space_between {
+  border: 3px solid pink;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
 .datos {
   border: 3px solid blue;
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+  width: 300px;
   justify-content: flex-end;
+}
+.datos label {
+  margin-right: 10px;
 }
 .datos input {
   margin-bottom: 10px;
+  text-align: center;
+  margin-right: 10px;
 }
 
 .foto {
@@ -76,12 +103,6 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-}
-
-.flx_space_between {
-  border: 3px solid pink;
-  display: flex;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=login.css.map */

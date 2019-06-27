@@ -15,10 +15,26 @@ body {
     height: 100%;
 }
 
-.generico {
+@mixin generico {
     border: 1px solid green;
+    display: flex;
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 100%;
+}
+
+.generico_derecha {
+    @include generico;
+    justify-content: flex-end;
+}
+
+.generico_izquierda {
+    @include generico;
+    justify-content: flex-start;
+}
+.generico_centrado {
+    @include generico;
+    justify-content: center;
 }
 
 .flx {
@@ -36,6 +52,11 @@ body {
     }
 }
 
+
+@mixin flx_space_between {
+
+}
+
 .flx_login {
     border: 3px solid $color-acentuado;
     display: flex;
@@ -45,13 +66,6 @@ body {
     flex-direction: column; 
     border-radius: 20px;
     padding: 10px;
-}
-
-.centrado {
-    border: 1px solid black;
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
 }
 
 button {
@@ -68,6 +82,13 @@ nav {
     }
 }
 
+.flx_space_between {
+    border: 3px solid pink; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%
+}
 @mixin informacion {
     border: 3px solid blue;
     display: flex;
@@ -76,10 +97,15 @@ nav {
 
 .datos {
     @include informacion;
-    width: 400px;
+    width: 300px;
     justify-content: flex-end;
+    label {
+        margin-right: 10px;
+    }
     input {
         margin-bottom: 10px;
+        text-align: center;
+        margin-right: 10px;
     }
 
 }
@@ -89,8 +115,3 @@ nav {
     width: 200px;
 }
 
-.flx_space_between {
-    border: 3px solid pink; 
-    display: flex;
-    justify-content: space-between;
-}
