@@ -105,4 +105,50 @@ nav a {
   width: 200px;
 }
 
+/* Seccion Formacion */
+.section-formacion {
+  border: 1px solid red;
+}
+
+.label-formacion {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.label-textarea {
+  border: 1px solid green;
+  display: flex;
+}
+
+.button-formacion {
+  border: 1px solid black;
+}
+
+/* Seccion Incapacidad */
+.section-incapacidad {
+  border: 1px solid red;
+}
+
+.label-incapacidad {
+  border: 1px solid blue;
+}
+
+.label-motivo {
+  border: 1px solid green;
+}
+
+.button-incapacidad {
+  border: 1px solid black;
+}
+
+/* Seccion Prestamo */
+.section-prestamo {
+  border: 1px solid red;
+}
+
+.label-prestamo {
+  border: 1px solid green;
+}
+
 /*# sourceMappingURL=login.css.map */
