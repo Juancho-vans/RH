@@ -85,13 +85,32 @@ body {
   width: 60%;
 }
 
-.linea {
+.linea_izquierda {
   border: 1px solid #212121;
   margin: 8px 0 8px 0;
   width: 100%;
+  text-align: left;
 }
-.linea h3 {
+
+.linea_centrada {
+  border: 1px solid #212121;
+  margin: 8px 0 8px 0;
+  width: 100%;
   text-align: center;
+}
+.linea_centrada h4 {
+  color: gray;
+}
+
+.linea_space_between {
+  border: 1px solid #212121;
+  margin: 8px 0 8px 0;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+.linea_space_between select {
+  margin-right: 30px;
 }
 
 .central_reportes {

@@ -80,12 +80,31 @@ body {
     width: 60%;
 }
 
-.linea {
+@mixin linea {
     border: 1px solid $primario-texto; 
     margin: 8px 0 8px 0;
     width: 100%;
-    h3 {
-        text-align: center;
+}
+
+.linea_izquierda {
+    @include linea;
+    text-align: left;
+}
+
+.linea_centrada {
+    @include linea;
+    text-align: center;
+    h4 {
+        color: gray;
+    }
+}
+
+.linea_space_between {
+    @include linea;
+    text-align: center;
+    justify-content: space-between;
+    select {
+        margin-right: 30px;
     }
 }
 
