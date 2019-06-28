@@ -11,6 +11,10 @@ body{
   flex-shrink: 0;
   border: 1px solid black;
 }
+.container{
+  border: 2px solid grey;
+  flex-direction: 
+}
 
 div{
   display: inline;
