@@ -113,14 +113,14 @@ nav a {
 .label-formacion {
   border: 1px solid blue;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.label-textarea {
-  border: 1px solid green;
-  display: flex;
-}
-
+/* .label-textarea {
+    border: 1px solid green;
+    display: flex;
+} */
 .button-formacion {
   border: 1px solid black;
 }
