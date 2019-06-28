@@ -1,14 +1,7 @@
-$primario:#FFEB3B;
-$primario-obscuro:#FBC02D;
-$primario-claro: #FFECB3;
-$primario-texto:#212121;
-$secundario-texto:#757575;
-$texto-claro:#FFF9C4;
-$color-acentuado:#607D8B;
-$borde:#BDBDBD;
+@import "colors";
 
 html {
-    height: 95%
+    /* height: 95%; */
 }
 body {
     background-color: $primario;
@@ -51,6 +44,61 @@ body {
         text-align: center;
     }
 }
+ 
+.flx_total {
+    border: 3px solid purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 550px;
+    width: 100%;
+    color: $primario-texto;
+        h1 {
+        text-align: center;
+    }
+}
+
+@mixin reporte {
+    border: 3px solid $primario-obscuro;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2px;
+    padding: 2px;
+}
+
+.rep_lateral_izq {
+    @include reporte;
+    width: 20%;
+}
+
+.rep_lateral_der {
+    @include reporte;
+    width: 60%;
+}
+
+.linea {
+    border: 1px solid $primario-texto; 
+    margin: 8px 0 8px 0;
+    width: 100%;
+    h3 {
+        text-align: center;
+    }
+}
+
+
+.central_reportes {
+    border: 3px solid #607D8B;
+    display: flex; 
+    flex-direction: rows;
+    margin: 3px;
+    padding: 5px;
+    height: 100%;
+    width: 98%;
+}
 
 
 @mixin flx_space_between {
@@ -75,7 +123,7 @@ button {
 
 nav {
     border: 3px solid orange; 
-    width: 100%;
+    width: 99%;
     a {
         text-decoration: none;
         padding: 20px;
@@ -83,11 +131,12 @@ nav {
 }
 
 .flx_space_between {
-    border: 3px solid pink; 
+    border: 3px solid pink;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 80%
+    width: 80%;
+    
 }
 @mixin informacion {
     border: 3px solid blue;
@@ -107,7 +156,6 @@ nav {
         text-align: center;
         margin-right: 10px;
     }
-
 }
 
 .foto  {
@@ -115,3 +163,9 @@ nav {
     width: 200px;
 }
 
+.footer {
+    border: 3px solid blue;
+    display: block;
+    background-color: gray;
+    width: 100%;    
+} 

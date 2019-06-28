@@ -1,5 +1,5 @@
 html {
-  height: 95%;
+  /* height: 95%; */
 }
 
 body {
@@ -49,6 +49,61 @@ body {
   text-align: center;
 }
 
+.flx_total {
+  border: 3px solid purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 550px;
+  width: 100%;
+  color: #212121;
+}
+.flx_total h1 {
+  text-align: center;
+}
+
+.rep_lateral_izq {
+  border: 3px solid #FBC02D;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2px;
+  padding: 2px;
+  width: 20%;
+}
+
+.rep_lateral_der {
+  border: 3px solid #FBC02D;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2px;
+  padding: 2px;
+  width: 60%;
+}
+
+.linea {
+  border: 1px solid #212121;
+  margin: 8px 0 8px 0;
+  width: 100%;
+}
+.linea h3 {
+  text-align: center;
+}
+
+.central_reportes {
+  border: 3px solid #607D8B;
+  display: flex;
+  flex-direction: rows;
+  margin: 3px;
+  padding: 5px;
+  height: 100%;
+  width: 98%;
+}
+
 .flx_login {
   border: 3px solid #607D8B;
   display: flex;
@@ -67,7 +122,7 @@ button {
 
 nav {
   border: 3px solid orange;
-  width: 100%;
+  width: 99%;
 }
 nav a {
   text-decoration: none;
@@ -103,6 +158,13 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
+}
+
+.footer {
+  border: 3px solid blue;
+  display: block;
+  background-color: gray;
+  width: 100%;
 }
 
 /*# sourceMappingURL=login.css.map */
