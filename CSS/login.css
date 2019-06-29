@@ -1,10 +1,17 @@
 html {
   /* height: 95%; */
+  width: 100%;
 }
 
+@font-face {
+  font-family: "TheklaExtended";
+  src: url("TheklaExtended.ttf");
+}
 body {
-  background-color: #FFEB3B;
+  background-color: white;
   height: 100%;
+  font-family: "TheklaExtended";
+  margin: 0;
 }
 
 .generico_derecha {
@@ -35,14 +42,13 @@ body {
 }
 
 .flx {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  height: 100%;
   color: #212121;
 }
 .flx h1 {
@@ -65,18 +71,30 @@ body {
   text-align: center;
 }
 
+.columnas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+.columnas img {
+  margin: 0;
+  width: 150px;
+}
+
 .rep_lateral_izq {
-  border: 3px solid #FBC02D;
+  /* border: 3px solid black; */
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   margin: 2px;
   padding: 2px;
   width: 20%;
+  background-color: #F8C300;
 }
 
 .rep_lateral_der {
-  border: 3px solid #FBC02D;
+  /* border: 3px solid black; */
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -86,14 +104,14 @@ body {
 }
 
 .linea_izquierda {
-  border: 1px solid #212121;
+  border: 1px;
   margin: 8px 0 8px 0;
   width: 100%;
   text-align: left;
 }
 
 .linea_centrada {
-  border: 1px solid #212121;
+  border: 1px;
   margin: 8px 0 8px 0;
   width: 100%;
   text-align: center;
@@ -103,7 +121,7 @@ body {
 }
 
 .linea_space_between {
-  border: 1px solid #212121;
+  border: 1px;
   margin: 8px 0 8px 0;
   width: 100%;
   text-align: center;
@@ -114,13 +132,13 @@ body {
 }
 
 .central_reportes {
-  border: 3px solid #607D8B;
+  /* border: 3px solid #607D8B; */
   display: flex;
   flex-direction: rows;
   margin: 3px;
   padding: 5px;
   height: 100%;
-  width: 98%;
+  width: 100%;
 }
 
 .flx_login {
@@ -140,12 +158,32 @@ button {
 }
 
 nav {
-  border: 3px solid orange;
-  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid orange;  */
+  margin: 0;
+  width: 100%;
+  background-color: black;
 }
 nav a {
   text-decoration: none;
   padding: 20px;
+  color: white;
+  font-weight: bolder;
+  display: block;
+  margin: 0;
+}
+nav a:hover {
+  color: #121312;
+  background-color: #F8C300;
+}
+nav img {
+  width: 80px;
+  margin: 10px 0 10px 0;
+}
+nav div {
+  display: flex;
+  align-items: center;
 }
 
 .flx_space_between {
@@ -180,10 +218,20 @@ nav a {
 }
 
 .footer {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   display: block;
-  background-color: gray;
+  background-color: #121312;
   width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 5px 15px 5px 15px;
 }
 
 /* Seccion Formacion */
@@ -208,7 +256,7 @@ nav a {
 
 /* Seccion Incapacidad */
 .section-incapacidad {
-  border: 1px solid red;
+  border: 1px solid aqua;
 }
 
 .label-incapacidad {
