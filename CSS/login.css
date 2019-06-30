@@ -188,7 +188,7 @@ html {
 }
 .flx_login input {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 button {
@@ -215,6 +215,10 @@ nav a {
 nav a:hover {
   color: #121312;
   background-color: #F8C300;
+}
+nav .fondo_amarillo {
+  background-color: #F8C300;
+  color: black;
 }
 nav img {
   width: 80px;
