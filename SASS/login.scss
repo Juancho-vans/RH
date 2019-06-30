@@ -10,24 +10,35 @@ html {
     src: url("TheklaExtended.ttf");
     }
 
-body {
+.body-claro{
     background-color: white; 
     height: 100%;
     font-family: 'TheklaExtended';
     margin: 0;
 }
 
+.body-obscuro {
+    background-color: black; 
+    height: 100%;
+    font-family: 'TheklaExtended';
+    margin: 0;
+}
+
 @mixin generico { 
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
+    color: black;
 }
 
 .generico_derecha {
     @include generico;
     justify-content: flex-end;
+    input {
+        margin-left: 5px;
+    }
 }
 
 .generico_izquierda {
@@ -47,24 +58,46 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    
+    width: 100%;
     color: $primario-texto;
         h1 {
         text-align: center;
     }
 }
+
+.boton_quali_obscuro {
+    background-color: black;
+    color: white;
+    border:none;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.boton_quali_obscuro:hover {
+    background-color:$quali_gris;
+}
+
+
+
+.logo_quali {
+    display: flex;
+
+}
  
 .flx_total {
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    height: 550px;
     width: 100%;
-    color: $primario-texto;
+    height: 800px;
+    color: white;
         h1 {
         text-align: center;
     }
@@ -147,14 +180,20 @@ body {
 }
 
 .flx_login {
-    border: 3px solid $color-acentuado;
+    border: 1px solid black;
     display: flex;
     height: 100px;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column; 
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 30px; 
+    background-color: $quali-amarillo;
+    background-size: 100%;
+    input {
+        text-align: center;
+        font-size: 20px;
+    }
 }
 
 button {
