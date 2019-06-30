@@ -1,0 +1,162 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/login.css">
+    <title>Solicitudes</title>
+</head>
+
+<body class="body-claro">
+    <div class="flx">
+        <nav>
+            <div>
+                <div class="columnas">
+                    <img src="IMS\qualichico.svg" alt="logo">
+                    <img src="IMS\artedisenochico.svg" alt="logo">
+                </div>
+                <img src="IMS\cuadrocolibri.svg" alt="logo">
+            </div>
+            <div>
+                <a href="#">Generales</a>
+                <a href="#" class="fondo_amarillo">Solicitudes</a>
+                <a href="#">Reportes</a>
+            </div>
+        </nav>
+
+        <div class="solicitudes"> <!-- ++++++++ vaciones ++++++++-->
+            <div class="izquierdo_3">
+                <div><h4>Vacaciones</h4></div>
+            </div>
+            <div class="central_3">
+                <div class=linea_centrada>
+                    F inicial: <input type="date" name="dt_FechIni" size="5">
+                    F Final: <input type="date" name="dt_FechFin" size="5">
+                </div> 
+                <div>
+                    <input type="text" id="txt_dias" size="1" value ="10" disabled>
+                    dias disponibles
+                </div>
+            </div>
+            <div class="derecho_3">
+                <input type="button" class="boton_quali_obscuro" value="Solicitar">
+            </div>
+        </div>
+
+        <div class="solicitudes"> <!-- ++++++++ aumento ++++++++-->
+                <div class="izquierdo_3">
+                    <div><h4>Aumento</h4></div>
+                </div>
+                <div class="central_3">
+                    <div class=linea_centrada>    
+                        Ultima Evaluación:
+                        <select name="evaluación" width="100px">
+                            <option value="1">S</option>
+                            <option value="2">A</option>
+                            <option value="3">B</option>
+                            <option value="4">C</option>
+                        </select>
+                    </div> 
+                    <div class="linea_centrada">
+                        Adjuntar formacion reciente
+                        <input type="button" class="boton_adjuntar" value="Adjuntar">    
+                    </div>
+                    <div class="linea_centrada adjuntos">
+                        archivo 1 / archivo 2
+                    </div>
+                </div>
+                <div class="derecho_3">
+                    <input type="button" class="boton_quali_obscuro" value="Solicitar">
+                </div>
+            </div>
+    
+        <div class="solicitudes"> <!-- ++++++++ prestamo ++++++++-->
+            <div class="izquierdo_3">
+                <div><h4>Prestamo</h4></div>
+            </div>
+            <div class="central_3">
+                <div class=linea_centrada>    
+                    monto:
+                    <select name="monto" width="100px">
+                        <option value="1">$1,000</option>
+                        <option value="2">$2,000</option>
+                        <option value="3">$3,000</option>
+                        <option value="4">$4,000</option>
+                        <option value="5">$5,000</option>
+                        <option value="6">$6,000</option>
+                    </select>
+                    plazo:
+                    <select name="monto" width="100px">
+                        <option value="3">3 meses</option>
+                        <option value="6000">6 meses</option>
+                        <option value="9000">9 meses</option>
+                        <option value="12000">12 meses</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="derecho_3">
+                <input type="button" class="boton_quali_obscuro" value="Solicitar">
+            </div>
+        </div>
+
+        <div class="solicitudes"> <!-- ++++++++ Incapacidad ++++++++-->
+            <div class="izquierdo_3">
+                <div><h4>Incapacidad</h4></div>
+            </div>
+            <div class="central_3">
+                Motivo: <textarea rows="3" cols="60"></textarea>
+                <div>
+                F inicial: <input type="date" name="dt_FechIni" size="5">
+                F Final: <input type="date" name="dt_FechFin" size="5">
+                </div>
+            </div>
+            <div class="derecho_3">
+                <input type="button" class="boton_quali_obscuro" value="Solicitar">
+            </div>
+        </div>
+        
+        <div class="solicitudes"> <!-- ++++++++ Formacion ++++++++-->
+                <div class="izquierdo_3">
+                    <div><h4>Formacion Empresarial</h4></div>
+                </div>
+                <div class="central_3">
+                    <div class=linea_centrada>    
+                        <div>
+                            Justificación: <textarea rows="1" cols="60"></textarea>
+                        </div>
+                        Cursos disponibles:
+                        <select name="cursos">
+                            <option value="Aprender_a_aprender">Aprender a aprender</option>
+                            <option value="Manejo_de_la_voz">Manejo de la voz</option>
+                            <option value="PNL">Programacion neurolinguistica</option>
+                            <option value="Comunicacion_efectiva">Comunicacion efectiva</option>
+                            <option value="Google_apps">Google Apps</option>
+                            <option value="Manejo_de_conflictos">Manejo de conflictos</option>
+                            <option value="Motivacion_en_la_organizacion">Motivacion en la organizació</option>
+                            <option value="Manejo_de_objeciones">Manejo de objeciones</option>
+                            <option value="Telemarketing">Telemarketing</option>
+                            <option value="Ortografia_y_redaccion">Fiat</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="derecho_3">
+                    <input type="button" class="boton_quali_obscuro" value="Solicitar">
+                </div>
+            </div>
+    
+
+        <div class="footer">
+            <div>
+                quali_art@hotmail.com <br>
+                av. tulipanes 127 <br>
+                los tulipanes, mineral de la reforma
+            </div>
+            <div>
+                whatsapp <br>
+                771 - 134 - 97 - 80
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
