@@ -23,149 +23,40 @@
             </div>
         </nav>
 
-        <div class="central_reportes">
-            <div class="rep_lateral_izq">  <!-- +++++++++++ AREAS  +++++++++++++ -->
-                <div class="linea_centrada"><h3>Areas</h3></div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="RH" value="chk_RH" checked>
-                    Recursos Humanos    
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Conta" value="chk_RH" checked>
-                    Contabilidad
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Inmuebles" value="chk_RH" checked>
-                    Inmuebles
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Finanzas" value="chk_RH" checked>
-                    Finanzas
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="TI" value="chk_RH" checked>
-                    Tecnologias de la información
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Legal" value="chk_RH" checked>
-                    Legal
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Seguridad" value="chk_RH" checked>
-                    Seguridad
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Ventas" value="chk_RH" checked>
-                    Ventas
-                </div>
-            </div>
-            <div class="rep_lateral_izq">   <!-- +++++++++ DEPARTAMENTOS +++++++++++-->
-                <div class="linea_centrada"><h3>Departamentos</h3></div>
-                <div class="linea_izquierda"> <!-- ***** inicio de RH ***** -->
-                    <input type="checkbox" name="RH_Beneficios" value="chk_RH_Beneficios" checked>
-                     Beneficios
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="RH_Reclu_y_Sel" value="chk_RH_Reclu_y_Sel" checked>
-                    Reclutamiento y Selección
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="RH_Cul_Org" value="chk_RH_Cul_Org" checked>
-                    Cultura Organizacional
-                </div>     <!--  ****** fin de RH ****** -->
+        <div class="flx"> 
+            <div class="flx_space_between">
+                <div class="datos">
+                    <div class="generico_centrado">
+                        <h3>Datos generales del colaborador</h3>
+                    </div>
+                    
+                    <label for="lbl_nombres">Nombre:</label>
+                    <input type="text" id="txt_nombres" size="20" 
+                        value ="Juan Carlos" disabled>
 
-                <div class="linea_izquierda"> <!-- ***** inicio de contabilidad ***** -->
-                    <input type="checkbox" name="Conta_Contabilidad" value="chk_Conta_Conta" checked>
-                     Contabilidad
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Conta_Presup" value="chk_Conta_Presu" checked>
-                    Presupuestos
-                </div>     <!--  ****** fin de Contabilidad ****** -->
+                    <label for="lbl_apellidos">Apellidos:</label>
+                    <input type="text" id="txt_apellidos" size="20"
+                        value ="Castillo López" disabled>
+                    
+                    <label for="lbl_area">Area:</label>
+                    <input type="text" id="txt_area" size="20"
+                        value ="Recursos Humanos" disabled>
 
-                <div class="linea_izquierda"> <!-- ***** inicio de Inmuebles ***** -->
-                    <input type="checkbox" name="Inm_Limp_y_Mant" value="chk_Inm_Limp_y_Mant" checked>
-                     Limpieza y Mantenimiento
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Inm_Elec_e_Inst" value="chk_Inm_Elec_e_Inst" checked>
-                    Electricidad e instalaciones
-                </div> 
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Inm_Prot_Civil" value="chk_Inm_Prot_Civil" checked>
-                    Proteccion Civil
-                </div>     <!--  ****** fin de Inmuebles ****** -->
+                    <label for="lbl_depto">Depto:</label>
+                    <input type="text" id="txt_depto" size="20"
+                        value ="Beneficios" disabled>
 
-                <div class="linea_izquierda"> <!-- ***** inicio de finanzaz ***** -->
-                    <input type="checkbox" name="Fin_Nom_y_Ben" value="chk_Fin_Nom_y_Ben" checked>
-                     Nomina y Beneficios
+                    <label for="lbl_Genero">Genero:</label>
+                    <input type="text" id="txt_Genero" size="20"
+                        value ="Masculino" disabled>
+                    
+                    <label for="lbl_Edad">Edad:</label>
+                    <input type="text" id="txt_Edad" size="20"
+                        value ="37 años" disabled>
                 </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Fin_Presu_Area" value="chk_Fin_Presu_Area" checked>
-                    Presupuestos de area
-                </div>     <!--  ****** fin de finanzaz ****** -->
-
-                <div class="linea_izquierda"> <!-- ***** inicio de TI ***** -->
-                    <input type="checkbox" name="TI_Redes" value="chk_TI_Redes" checked>
-                     Redes
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="TI_Sop_Tec" value="chk_TI_Sop_Tec" checked>
-                    Soporte Tecnico
-                </div> 
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="TI_Desarrollo" value="chk_TI_Desarrollo" checked>
-                    Desarrollo
-                </div>     <!--  ****** fin de TI ****** -->
-
-                <div class="linea_izquierda"> <!-- ***** inicio de Legal ***** -->
-                    <input type="checkbox" name="Lgl_Rel_Labor" value="chk_Lgl_Rel_Labor" checked>
-                     Relaciones Laborales
-                </div>
-                <div class="linea_izquierda">
-                    <input type="checkbox" name="Lgl_Sind" value="chk_Lgl_Sind" checked>
-                    Sindicato
-                </div>     <!--  ****** fin de Legal ****** -->
-
-            </div>
-
-            <div class="rep_lateral_der">
-                <div class="linea_centrada">
-                    <h3>Filtros adicionales</h3>
-                </div>
-                <div class="linea_space_between">
-                    Cursos disponibles: 
-                    <select name="cursos">
-                        <option value="Aprender_a_aprender">Aprender a aprender</option>
-                        <option value="Manejo_de_la_voz">Manejo de la voz</option>
-                        <option value="PNL">Programacion neurolinguistica</option>
-                        <option value="Comunicacion_efectiva">Comunicacion efectiva</option>
-                        <option value="Google_apps">Google Apps</option>
-                        <option value="Manejo_de_conflictos">Manejo de conflictos</option>
-                        <option value="Motivacion_en_la_organizacion">Motivacion en la organizació</option>
-                        <option value="Manejo_de_objeciones">Manejo de objeciones</option>
-                        <option value="Telemarketing">Telemarketing</option>
-                        <option value="Ortografia_y_redaccion">Fiat</option>
-                    </select>
-                    Genero:
-                    <select name="genero">
-                        <option value="Masculino">Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                    </select>
-                    Edad:
-                    <select name="edad">
-                        <option value="18_20">18_20</option>
-                        <option value="21_30">21_30</option>
-                        <option value="31_40">31_40</option>
-                        <option value="41_50">41_50</option>
-                        <option value="51_60">51_60</option>
-                        <option value="61_80">61_80</option>
-                    </select>
-                    <input type="button" value="solicitar">
-                </div>
-                <div class="linea_centrada">
-                    <h4>RH / Finanzas / Inmuebles / Reclutamiento y Seleccion / Cultura Organizacional 
-                        / Presupuestos / Director / Analista</h4>
+                
+                <div class="foto">
+                    <img src="ims\jc.jpg" alt="colaborador" width="100%">
                 </div>
             </div>
         </div>

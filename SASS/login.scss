@@ -226,7 +226,7 @@ nav {
         background-color: $quali_amarillo;
         color: black;
     }
-
+  
     img {
         width: 80px;
         margin: 10px 0 10px 0 ;
@@ -239,23 +239,34 @@ nav {
 }
 
 .flx_space_between {
-    border: 3px solid pink;
+    /* border: 3px solid pink; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 80%;
+    width: 95%;
     
 }
 @mixin informacion {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foto  {
+    @include informacion;
+    width: 300px;
 }
 
 .datos {
     @include informacion;
-    width: 300px;
+    width: 350px;
     justify-content: flex-end;
+    background-color: $quali-amarillo;
+    border-radius: 10px;
+    padding: 5px 10px 15px 10px;
     label {
         margin-right: 10px;
     }
@@ -263,13 +274,13 @@ nav {
         margin-bottom: 10px;
         text-align: center;
         margin-right: 10px;
+        font-size: 17px;
+    }
+    h3 {
+        margin-top: 5px;
     }
 }
 
-.foto  {
-    @include informacion;
-    width: 200px;
-}
 
 .footer {
     /* border: 3px solid blue; */

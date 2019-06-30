@@ -230,19 +230,35 @@ nav div {
 }
 
 .flx_space_between {
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 95%;
+}
+
+.foto {
+  /* border: 3px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
 }
 
 .datos {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 350px;
   justify-content: flex-end;
+  background-color: #F8C300;
+  border-radius: 10px;
+  padding: 5px 10px 15px 10px;
 }
 .datos label {
   margin-right: 10px;
@@ -251,13 +267,10 @@ nav div {
   margin-bottom: 10px;
   text-align: center;
   margin-right: 10px;
+  font-size: 17px;
 }
-
-.foto {
-  border: 3px solid blue;
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
+.datos h3 {
+  margin-top: 5px;
 }
 
 .footer {
