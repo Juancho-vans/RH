@@ -311,9 +311,17 @@ nav div {
 }
 
 .flx_space_between {
-  /* border: 3px solid pink; */
+  border: 3px solid pink;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+}
+
+.flx_center {
+  /* border: 3px solid blue; */
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 95%;
 }
@@ -326,6 +334,9 @@ nav div {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 300px;
+}
+.foto img {
+  border-radius: 30px;
 }
 
 .datos {
@@ -340,6 +351,7 @@ nav div {
   background-color: #F8C300;
   border-radius: 10px;
   padding: 5px 10px 15px 10px;
+  margin-right: 70px;
 }
 .datos label {
   margin-right: 10px;

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title>Practica de componentes</title>
+   <link rel="stylesheet" href="CSS/Componentes.css">
+</head>
+<body> 
+   <div id=contenedor>
+      <div class="marco" id="div_cuadroTexto"> <!-- cuadro de texto -->
+         Cuadro de texto:
+         <br><br>
+         <input type="button" value="genera cuadro de texto" id="btn_texto">
+         <br><br>
+         <input type="text" id="cuadroDeTexto" value="aqui va el texto">
+      </div>
+
+      <div class="marco" id="div_cuadroPassword">  <!-- password -->
+         Cuadro de paswword:
+         <br><br>
+         <input type="button" value="genera cuadro de password" id="btn_password">
+         <br><br>
+         <input type="password" id="myPwd" value="secret">
+      </div>
+
+      <div class="marco" id="div_cuadroAreaTexto"> <!-- area de texto -->
+         Area de texto:
+         <br><br>
+         <input type="button" value="genera area de texto" id="btn_areaTexto">
+         <br><br>
+         <textarea id="myTextArea" rows="3" cols="30">
+            Your text here</textarea>
+      </div>
+
+      <div class="marco">   <!-- lista -->
+         Lista:
+         <br><br>
+         <input type="button" value="genera lista" id="btn_lista">
+         <br><br>
+         <select id="myList">
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+            <option value="4">four</option>
+         </select>
+      </div>
+
+      <div class="marco">  <!-- checkbox -->
+         Check Box:
+         <br><br>
+         <input type="button" value="genera CheckBox" id="btn_checkbox" >
+         <br><br>
+         <input type="checkbox" id="chk_Ps" value="Playstation">
+         Playstation <br>
+         <input type="checkbox" id="chk_Xb" value="Xbox">
+         X-Box <br>
+         <input type="checkbox" id="chk_Pc" value="PC">
+         PC <br>
+         <input type="checkbox" id="chk_Ni" value="Nintendo">
+         Nintendo <br>
+      </div>
+
+      <div class="marco">  <!-- radio button -->
+         Radio Button:
+         <br><br>
+         <input type="button" value="genera CheckBox" id="btn_radioButton">
+         <br><br>
+         <input type="radio" name="radGenero" id="id_RPG" value="RPG" checked="checked"> RPG <br>
+         <input type="radio" name="radGenero" id="id_shooter" value="Shooter"> Shooter <br>
+         <input type="radio" name="radGenero" id="id_2dPlatform" value="Platform"> Platform <br>
+         <input type="radio" name="radGenero" id="id_Fight" value="Fight"> Fight <br>
+         <input type="radio" name="radGenero" id="id_Smash" value="Smash them all"> Smash them all <br>
+      </div>
+         
+      <div class="marco">  <!-- rango -->
+         Rango:
+         <br><br>
+         <input type="button" value="genera rango" id="btn_rango">
+         <br><br>
+         <input type="range" id="range" min="0" max="256" value="128">
+      </div>
+
+      <div class="marco"> <!-- imagen -->
+         Imagen:
+         <br><br>
+         <input type="button" value="genera Imagen" id="btn_imagen">
+         <br><br>
+         <img src="IMS/PS.png" alt="Playstation">
+      </div>
+
+   </div>
+   
+   <script src="JS/componentes.js"></script>
+
+</body>
+</html>
