@@ -1,0 +1,39 @@
+import React from 'react';
+import './App.css'; 
+import './CSS/login.css'
+
+function App() {
+  return (
+
+    <div class="rep_lateral_izq"> 
+      <div class="linea_centrada"><h3>Areas</h3></div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="RH" value="chk_RH" checked/> Recursos Humanos    
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Conta" value="chk_RH" checked/> Contabilidad
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Inmuebles" value="chk_RH" checked/> Inmuebles
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Finanzas" value="chk_RH" checked/> Finanzas
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="TI" value="chk_RH" checked/> Tecnologías de la información
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Legal" value="chk_RH" checked/> Legal
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Seguridad" value="chk_RH" checked/> Seguridad
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Ventas" value="chk_RH" checked/> Ventas
+      </div>
+    </div>
+
+  );
+}
+
+export default App;

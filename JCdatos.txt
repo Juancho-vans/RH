@@ -1,0 +1,47 @@
+import React from 'react';
+import './App.css'; 
+import PS from './IMS/PS.png' ;
+import './CSS/login.css'
+
+function App() {
+  return (
+
+      <div class="datos">
+          <h3>Datos generales del colaborador</h3>          
+          
+          <div class="pareja_datos">
+            <div class="pareja_datos">
+              <label for="lbl_nombres">Nombre:</label>
+              <input type="text" id="txt_nombres" size="20" value ="Juan Carlos" disabled/>
+            </div>
+            <div class="pareja_datos">
+              <label for="lbl_apellidos">Apellidos:</label>
+              <input type="text" id="txt_apellidos" size="20" value ="Castillo López" disabled/>
+            </div>
+            <div class="pareja_datos">
+              <label for="lbl_area">Area:</label>
+              <input type="text" id="txt_area" size="20" value ="Recursos Humanos" disabled/>
+            </div>
+            <div class="pareja_datos">
+              <label for="lbl_depto">Depto:</label>
+              <input type="text" id="txt_depto" size="20" value ="Beneficios" disabled/>
+            </div>
+            <div class="pareja_datos">
+              <label for="lbl_Genero">Genero:</label>
+              <input type="text" id="txt_Genero" size="20" value ="Masculino" disabled/>
+            </div>
+            <div class="pareja_datos">
+              <label for="lbl_Edad">Edad:</label>
+              <input type="text" id="txt_Edad" size="20" value ="37 años" disabled/>         
+            </div> 
+            <div class="foto">
+                    <img src={PS} alt="colaborador" width="100%"/>
+            </div>
+          </div>
+  
+      </div>
+        
+  );
+}
+
+export default App;

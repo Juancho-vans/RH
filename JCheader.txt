@@ -1,0 +1,30 @@
+import React from 'react';
+import './App.css'; 
+
+import quali from './IMS/quali.svg';
+import arteDiseno from './IMS/artediseno.svg';
+import Colibri from './IMS/colibri.svg';
+import './CSS/login.css'
+
+function App() {
+  return (
+
+    <nav>
+      <div>
+          <div className="columnas">
+              <img src={quali} alt="logo"/>
+              <img src={arteDiseno} alt="logo"/>
+          </div>
+          <img src={Colibri} alt="logo"/>
+      </div>
+      <div>
+          <a href="#" className="fondo_amarillo">Generales</a>
+          <a href="#">Solicitudes</a>
+          <a href="#">Reportes</a>
+      </div> 
+    </nav>
+
+  );
+}
+
+export default App;

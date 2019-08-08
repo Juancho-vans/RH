@@ -15,6 +15,14 @@ tml {
   margin: 0;
 }
 
+.body-obscuro {
+  background-color: black;
+  height: 100%;
+  font-family: "TheklaExtended";
+  font-size: 14px;
+  margin: 0;
+}
+
 .generico_derecha {
   /* border: 1px solid green; */
   display: flex;
@@ -27,6 +35,12 @@ tml {
 .generico_derecha input {
   margin-left: 5px;
 }
+
+.alerta {
+  color: red;
+  font-size: 10px;
+}
+
 
 .generico_izquierda {
   /* border: 1px solid green; */
@@ -147,8 +161,8 @@ tml {
   align-items: flex-start;
   flex-direction: column;
   margin: 2px;
-  padding: 2px;
-  width: 20%;
+  padding: 4px;
+  width: 250px;
   background-color: #F8C300;
 }
 
@@ -170,7 +184,7 @@ tml {
 }
 
 .linea_centrada {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   width: 100%;
   text-align: center;

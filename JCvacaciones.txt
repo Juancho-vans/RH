@@ -1,0 +1,34 @@
+import React from 'react';
+import './App.css'; 
+import './CSS/login.css'
+
+function App() {
+  return (
+
+    <div class="solicitudes"> {/* <!-- ++++++++ vacaciones ++++++++--> */}
+      <div class="izquierdo_3">
+          <div><h4>Vacaciones</h4></div>
+      </div>
+      <div class="central_3">
+        
+          <div class="pareja_datos">
+            F. inicial: <input type="date" name="dt_FechIni" size="5"/>
+          </div>
+          <div class="pareja_datos">
+            F. Final: <input type="date" name="dt_FechFin" size="5"/>
+          </div>
+          <div class="pareja_datos">
+          Días disponibles: <input type="text" id="txt_dias" size="2" value ="4" disabled/>
+          </div>
+        
+      </div>
+      <div class="derecho_3">
+          <input type="button" class="boton_quali_obscuro" value="Solicitar"/>
+      </div>
+    </div>
+
+
+  );
+}
+
+export default App;

@@ -1,0 +1,62 @@
+import React from 'react';
+import './App.css'; 
+import './CSS/login.css'
+
+function App() {
+  return (
+
+    <div class="rep_lateral_izq">   {/* <!-- +++++++++ DEPARTAMENTOS +++++++++++--> */}
+
+      <div class="linea_centrada"><h3>Departamentos</h3></div>
+      <div class="linea_izquierda">{/*  <!-- ***** inicio de RH ***** --> */}
+        <input type="checkbox" name="RH_Beneficios" value="chk_RH_Beneficios" checked/> Beneficios
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="RH_Reclu_y_Sel" value="chk_RH_Reclu_y_Sel" checked/> Reclutamiento y Selección
+      </div> 
+      <div class="linea_izquierda">
+        <input type="checkbox" name="RH_Cul_Org" value="chk_RH_Cul_Org" checked/> Cultura Organizacional
+      </div>     {/* <!--  ****** fin de RH ****** --> */}
+      <div class="linea_izquierda"> {/* <!-- ***** inicio de contabilidad ***** --> */}
+          <input type="checkbox" name="Conta_Contabilidad" value="chk_Conta_Conta" checked/> Contabilidad
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Conta_Presup" value="chk_Conta_Presu" checked/> Presupuestos
+      </div>     {/* <!--  ****** fin de Contabilidad ****** --> */}
+      <div class="linea_izquierda"> {/* <!-- ***** inicio de Inmuebles ***** --> */}
+          <input type="checkbox" name="Inm_Limp_y_Mant" value="chk_Inm_Limp_y_Mant" checked/> Limpieza y Mantenimiento
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Inm_Elec_e_Inst" value="chk_Inm_Elec_e_Inst" checked/> Electricidad e instalaciones
+      </div> 
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Inm_Prot_Civil" value="chk_Inm_Prot_Civil" checked/>> Proteccion Civil
+      </div>     {/* <!--  ****** fin de Inmuebles ****** --> */}
+      <div class="linea_izquierda"> {/* <!-- ***** inicio de finanzaz ***** --> */}
+          <input type="checkbox" name="Fin_Nom_y_Ben" value="chk_Fin_Nom_y_Ben" checked/> Nomina y Beneficios
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Fin_Presu_Area" value="chk_Fin_Presu_Area" checked/> Presupuestos de area
+      </div>     {/* <!--  ****** fin de finanzaz ****** --> */}
+      <div class="linea_izquierda"> {/* <!-- ***** inicio de TI ***** --> */}
+          <input type="checkbox" name="TI_Redes" value="chk_TI_Redes" checked/>> Redes
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="TI_Sop_Tec" value="chk_TI_Sop_Tec" checked/> Soporte Tecnico
+      </div> 
+      <div class="linea_izquierda">
+          <input type="checkbox" name="TI_Desarrollo" value="chk_TI_Desarrollo" checked/> Desarrollo
+      </div>     {/* <!--  ****** fin de TI ****** --> */}
+      <div class="linea_izquierda"> {/* <!-- ***** inicio de Legal ***** --> */}
+          <input type="checkbox" name="Lgl_Rel_Labor" value="chk_Lgl_Rel_Labor" checked/> Relaciones Laborales
+      </div>
+      <div class="linea_izquierda">
+          <input type="checkbox" name="Lgl_Sind" value="chk_Lgl_Sind" checked/> Sindicato
+      </div>     {/* <!--  ****** fin de Legal ****** -->  */}
+
+    </div>
+
+  );
+}
+
+export default App;
